@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="306dp"
+        android:layout_height="430dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="51dp"
+        app:srcCompat="@drawable/onboarding" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="290dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="170dp"
+        android:text="Find Your Anabul Friends!"
+        android:textAlignment="center"
+        android:textColor="@color/darkgrey"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="139dp"
+        android:text="Loving Adoption, Every Cat Has a Story"
+        android:textAlignment="center"
+        android:textColor="@color/darkgrey"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/btn_mulai"
+        android:textColor="@color/white"
+        android:background="@drawable/radius_btn"
+        android:textSize="16dp" />
+
+</RelativeLayout>

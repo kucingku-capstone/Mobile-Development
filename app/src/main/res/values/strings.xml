@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">KucingKu</string>
+<!--    onboarding section-->
+    <string name="btn_mulai">Find Now</string>
+<!--    login section-->
+    <string name="headline_login">Welcome Back</string>
+    <string name="txt_login">Sign in to your already existing account \n by fillings fields below</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="add_email_description">Masukan email</string>
+    <string name="add_password_description">Masukan password</string>
+    <string name="btn_login_description">Tombol masuk</string>
+    <string name="txt_forgotpass">Forgot Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_logingoogle">Login With Google</string>
+    <string name="enter_valid_email">Email tidak sesuai</string>
+    <string name="pass_check">Password tidak boleh kurang dari 8 karakter</string>
+    <string name="login_success">Welcome Back To Your Account</string>
+    <string name="congratulation">Congratulation</string>
+    <string name="next">Lanjut</string>
+</resources>

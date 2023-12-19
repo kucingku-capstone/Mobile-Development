@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "498838032232",
+    "project_id": "capstone-kucingku",
+    "storage_bucket": "capstone-kucingku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498838032232:android:593ca70c5e04e3488890dd",
+        "android_client_info": {
+          "package_name": "com.example.kucingku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9oI6i1_snt3knROIVQ5qWNUwK4fpwj3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

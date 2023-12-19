@@ -29,6 +29,9 @@
         <activity
             android:name=".view.signup.SignUpActivity"
             android:exported="false"/>
+        <activity
+            android:name=".view.login.ForgetPasswordActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

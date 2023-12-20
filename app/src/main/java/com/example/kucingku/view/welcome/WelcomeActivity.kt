@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kucingku.databinding.ActivityWelcomeMessageBinding
-import com.example.kucingku.view.login.LoginActivity
+import com.example.kucingku.view.main.MainActivity
 
 class WelcomeActivity : AppCompatActivity() {
 
@@ -16,7 +16,7 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnFindACat.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

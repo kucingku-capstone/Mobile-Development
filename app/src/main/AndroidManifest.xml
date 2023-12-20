@@ -51,6 +51,10 @@
             android:name=".view.login.ForgetPasswordActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".view.userpref.UserPrefActivity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

@@ -23,4 +23,28 @@
 <!--    signup section-->
     <string name="btn_signup">Sign Up</string>
     <string name="btn_find_a_cat">Find A Cat Now</string>
+
+<!--    preference section-->
+    <string name="btn_next">Next</string>
+    <!--    Breeds section-->
+    <string name="txt_breeds">Breeds</string>
+    <string name="btnpersian">Persian</string>
+    <string name="btncoon">Coon</string>
+    <string name="btnsiamase">Siamase</string>
+    <string name="btnbritish">British shorthair</string>
+    <string name="btnrussian">russian_blue</string>
+
+    <!--    Gender section-->
+    <string name="txt_gender">Gender</string>
+    <string name="btnmale">Male</string>
+    <string name="btnfemale">Female</string>
+
+    <!--    Age section-->
+    <string name="txt_age">Age</string>
+    <string name="btnbaby">Baby</string>
+    <string name="btnyoung2">Young</string>
+    <string name="btnadult">Adult</string>
+    <string name="btnsenior">Senior</string>
+
+
 </resources>

@@ -20,5 +20,4 @@ class OnboardingActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-
 }

@@ -71,9 +71,9 @@
         android:textColor="@color/darkgrey"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="673dp" />
+        tools:layout_editor_absoluteY="632dp" />
 
     <ProgressBar
         android:id="@+id/progressbar_register"

@@ -11,7 +11,7 @@ class OnboardingPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     }
 
     override fun getCount(): Int {
-        return 3 // Number of onboarding screens
+        return 3
     }
 
     override fun getPageTitle(position: Int): CharSequence? {

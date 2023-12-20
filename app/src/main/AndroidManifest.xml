@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kucingku">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/kucingkuicon"
@@ -9,12 +11,20 @@
         android:roundIcon="@drawable/kucingkuicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.KucingKu">
+
         <activity
             android:name=".view.splash.SplashActivity"
-            android:exported="false"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".view.onBoarding.OnboardingActivity"
-            android:exported="false"/>
+            android:exported="false" />
+
         <activity
             android:name=".view.main.MainActivity"
             android:exported="true">
@@ -23,15 +33,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".view.login.LoginActivity"
-            android:exported="false"/>
+            android:exported="false" />
+
         <activity
             android:name=".view.signup.SignUpActivity"
-            android:exported="false"/>
+            android:exported="false" />
+
         <activity
             android:name=".view.login.ForgetPasswordActivity"
-            android:exported="false"/>
+            android:exported="false" />
+
     </application>
 
 </manifest>

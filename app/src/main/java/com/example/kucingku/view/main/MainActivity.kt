@@ -3,9 +3,6 @@ package com.example.kucingku.view.main
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import com.example.kucingku.R
 import com.example.kucingku.databinding.ActivityMainBinding
 import com.example.kucingku.view.login.LoginActivity
 import com.google.firebase.Firebase

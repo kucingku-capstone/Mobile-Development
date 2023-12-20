@@ -9,9 +9,10 @@
         android:id="@+id/imageView4"
         android:layout_width="158dp"
         android:layout_height="133dp"
-        app:srcCompat="@drawable/logo"
+        app:srcCompat="@drawable/kucingkuicon"
         tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="114dp" />
+        tools:layout_editor_absoluteY="114dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/profile"
@@ -21,7 +22,8 @@
         android:textSize="26dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="68dp" />
+        tools:layout_editor_absoluteY="68dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/aboutme"
@@ -30,15 +32,8 @@
         android:text="About Me"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="289dp" />
-
-    <TextView
-        android:id="@+id/desciption"
-        android:layout_width="338dp"
-        android:layout_height="72dp"
-        android:text="Hello! I am Ara, a loving cat enthusiast and ready to adopt. Providing a warm home and full attention to cats is my commitment. I love everything about cats.😺🏡"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="324dp" />
+        tools:layout_editor_absoluteY="274dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/intrest"
@@ -47,6 +42,17 @@
         android:text="Interest"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="432dp" />
+        tools:layout_editor_absoluteY="417dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/desciption"
+        android:layout_width="338dp"
+        android:layout_height="80dp"
+        android:text="Hello! I am Ara, a loving cat enthusiast and ready to adopt. Providing a warm home and full attention to cats is my commitment. I love everything about cats.😺🏡"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="310dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

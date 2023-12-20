@@ -22,4 +22,5 @@
     <string name="default_web_client_id">498838032232-j3fhn0cmgg7hhaha9dckt7nq16g0l9dh.apps.googleusercontent.com</string>
 <!--    signup section-->
     <string name="btn_signup">Sign Up</string>
+    <string name="btn_find_a_cat">Find A Cat Now</string>
 </resources>

@@ -11,6 +11,7 @@ import com.example.kucingku.R
 import com.example.kucingku.databinding.ActivityLoginBinding
 import com.example.kucingku.view.main.MainActivity
 import com.example.kucingku.view.signup.SignUpActivity
+import com.example.kucingku.view.welcome.WelcomeActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -114,7 +115,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
-            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+            startActivity(Intent(this@LoginActivity, WelcomeActivity::class.java))
             finish()
         }
     }

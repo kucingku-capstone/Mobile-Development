@@ -48,6 +48,8 @@
     <string name="btnyoung">Young</string>
     <string name="btnadult">Adult</string>
     <string name="btnsenior">Senior</string>
+    
+<!--    Profile section-->
 
 
 </resources>

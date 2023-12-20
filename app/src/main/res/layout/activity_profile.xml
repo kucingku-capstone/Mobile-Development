@@ -6,12 +6,14 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/icon_kucingku"
         android:layout_width="158dp"
         android:layout_height="133dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
         app:srcCompat="@drawable/kucingkuicon"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="114dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -20,19 +22,23 @@
         android:layout_height="wrap_content"
         android:text="Profile"
         android:textSize="26dp"
+        android:layout_marginTop="32dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/aboutme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="About Me"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="274dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_kucingku"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -40,6 +46,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Interest"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desciption"
+        android:layout_marginTop="32dp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="29dp"
         tools:layout_editor_absoluteY="417dp"
@@ -47,12 +57,132 @@
 
     <TextView
         android:id="@+id/desciption"
-        android:layout_width="338dp"
+        android:layout_width="0dp"
         android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:text="Hello! I am Ara, a loving cat enthusiast and ready to adopt. Providing a warm home and full attention to cats is my commitment. I love everything about cats.😺🏡"
         android:textSize="16dp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="310dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutme"
         tools:ignore="MissingConstraints" />
+
+    <RadioButton
+        android:id="@+id/btnmale"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/radius_btn"
+        android:button="@android:color/transparent"
+        android:buttonTint="@color/orange"
+        android:checked="false"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/btnmale"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toEndOf="@+id/btnpersian"
+        app:layout_constraintTop_toTopOf="@+id/btnpersian" />
+
+    <RadioButton
+        android:id="@+id/btnpersian"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/radius_btn"
+        android:button="@android:color/transparent"
+        android:buttonTint="@color/lightorange"
+        android:checked="false"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/btnpersian"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intrest" />
+
+    <RadioButton
+        android:id="@+id/btnyoung"
+        android:layout_width="119dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/radius_btn"
+        android:button="@android:color/transparent"
+        android:buttonTint="@color/lightorange"
+        android:checked="false"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/btnyoung"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/btnpersian"
+        app:layout_constraintTop_toBottomOf="@+id/btnpersian" />
+
+    <ImageView
+        android:id="@+id/btn_chat"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFindChat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icon_chat" />
+
+    <TextView
+        android:id="@+id/textViewFindChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/btn_chat"
+        app:layout_constraintStart_toStartOf="@+id/btn_chat" />
+
+    <ImageView
+        android:id="@+id/btn_profile"
+        android:layout_width="29dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icon_profile" />
+
+    <TextView
+        android:id="@+id/textViewProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile" />
+
+    <ImageView
+        android:id="@+id/btn_find"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/btn_profile"
+        app:layout_constraintStart_toEndOf="@+id/btn_chat"
+        app:srcCompat="@drawable/icon_find" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Cat"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_find"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/btn_find" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

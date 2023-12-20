@@ -11,6 +11,7 @@ import com.example.kucingku.R
 import com.example.kucingku.databinding.ActivityLoginBinding
 import com.example.kucingku.view.main.MainActivity
 import com.example.kucingku.view.signup.SignUpActivity
+import com.example.kucingku.view.userpref.UserPrefActivity
 import com.example.kucingku.view.welcome.WelcomeActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -58,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
             if (email.isNotEmpty() && pass.isNotEmpty()) {
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this, UserPrefActivity::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
@@ -115,7 +116,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun updateUI(currentUser: FirebaseUser?) {
         if (currentUser != null) {
-            startActivity(Intent(this@LoginActivity, WelcomeActivity::class.java))
+            startActivity(Intent(this@LoginActivity, UserPrefActivity::class.java))
             finish()
         }
     }

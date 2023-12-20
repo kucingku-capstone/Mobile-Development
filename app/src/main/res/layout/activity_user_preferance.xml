@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".view.userpref.UserPrefActivity">
+
+<!--messages-->
+    <TextView
+        android:id="@+id/headline_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Your Interest"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_reguler"
+        android:text="Choose up to 5 things you like. This will \nhelp us find the perfect cat for you!"
+        android:textColor="@color/darkgrey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headline_messages" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/breed"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_messages">
+
+        <TextView
+            android:id="@+id/txt_breed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/txt_breeds"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/btnpersian"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="false"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/persian"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_breed" />
+
+        <RadioButton
+            android:id="@+id/btncoon"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/Coon"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/btnpersian"
+            app:layout_constraintTop_toBottomOf="@+id/txt_breed" />
+
+        <RadioButton
+            android:id="@+id/btnsiamase"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/siamase"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnpersian" />
+
+        <RadioButton
+            android:id="@+id/btnmaine"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="false"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/maine"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/btnsiamase"
+            app:layout_constraintTop_toBottomOf="@+id/btncoon" />
+
+        <RadioButton
+            android:id="@+id/btnbritish"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="true"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/british_shorthair"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnsiamase" />
+
+        <RadioButton
+            android:id="@+id/btnrussian"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="false"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/russian_blue"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/btnbritish"
+            app:layout_constraintTop_toBottomOf="@+id/btnmaine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gender"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breed">
+
+        <TextView
+            android:id="@+id/txt_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/txt_gender"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/btnmale"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="false"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/male"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_gender" />
+
+        <RadioButton
+            android:id="@+id/btnfemale"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="false"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/female"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/btnmale"
+            app:layout_constraintTop_toBottomOf="@+id/txt_gender" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/age"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender">
+
+        <TextView
+            android:id="@+id/txt_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/txt_age"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/btnbaby"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="false"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/baby"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_age" />
+
+        <RadioButton
+            android:id="@+id/btnyoung2"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="false"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/young"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/btnbaby"
+            app:layout_constraintTop_toBottomOf="@+id/txt_age" />
+
+        <RadioButton
+            android:id="@+id/btnadult"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="false"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/adult"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnbaby" />
+
+        <RadioButton
+            android:id="@+id/btnsenior"
+            android:layout_width="122dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:buttonTint="@color/lightorange"
+            android:checked="false"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/senior"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/btnadult"
+            app:layout_constraintTop_toBottomOf="@+id/btnyoung2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/radius_btn2"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/next"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        app:layout_constraintVertical_bias="0.213" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

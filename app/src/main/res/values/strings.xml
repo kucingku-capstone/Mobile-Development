@@ -35,7 +35,8 @@
     <string name="btnsiamase">Siamase</string>
     <string name="btnmaine">Maine</string>
     <string name="btnbritish">British shorthair</string>
-    <string name="btnrussian">russian_blue</string>
+    <string name="btnrussian">Russian Blue</string>
+    <string name="btnlocal">Local</string>
 
     <!--    Gender section-->
     <string name="txt_gender">Gender</string>

@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/navigation_findcat"
-        android:name="com.example.kucingku.view.findCat.FindCatActivity"
+        android:name="com.example.kucingku.view.findCat.FindCatFragment"
         android:label="@string/find_cat"
         tools:layout="@layout/activity_find_cat" />
 

@@ -52,5 +52,10 @@
     
 <!--    Profile section-->
 
+    <!--    Button section-->
+    <string name="find_cat">Find Cat</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profile</string>
+
 
 </resources>

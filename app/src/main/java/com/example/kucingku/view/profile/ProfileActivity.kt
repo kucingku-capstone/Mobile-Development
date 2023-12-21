@@ -14,19 +14,5 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnProfile.setOnClickListener {
-            val intent = Intent(this, ProfileDetailActivity::class.java)
-            startActivity(intent)
-        }
-
-        binding.btnChat.setOnClickListener {
-            val intent = Intent(this, ChatActivity::class.java)
-            startActivity(intent)
-        }
-
-        binding.btnFind.setOnClickListener {
-            val intent = Intent(this, FindCatActivity::class.java)
-            startActivity(intent)
-        }
     }
 }

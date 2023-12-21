@@ -55,6 +55,19 @@
             android:name=".view.userpref.UserPrefActivity"
             android:exported="false"/>
 
+        <activity
+            android:name=".view.chat.ChatActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".view.findCat.FindCatActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".view.profile.ProfileActivity"
+            android:exported="false"/>
+
+
     </application>
 
 </manifest>

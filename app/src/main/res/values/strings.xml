@@ -57,5 +57,9 @@
     <string name="chat">Chat</string>
     <string name="profile">Profile</string>
 
+<!--    message section-->
+    <string name="txt_message">Welcome to Kucingku! \nWhere adopting a cat is an exciting journey! \n \nWere here to build connections and create \nforever homes for our feline friends. Our goals a \nsmooth adoption experience, matching you \nwith the perfect cat companion, and ongoing support for a happy life together.
+    \n \nJoin us on this heartwarming journey of love, \ncompanionship, and countless joyful moments \nwith your furry friend.
+    \n \nWith love, Kucingku Team</string>
 
 </resources>

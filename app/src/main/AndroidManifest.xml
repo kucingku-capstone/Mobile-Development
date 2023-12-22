@@ -4,6 +4,7 @@
     package="com.example.kucingku">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:allowBackup="true"
@@ -25,11 +26,6 @@
         <activity
             android:name=".view.onBoarding.OnboardingActivity"
             android:exported="false" />
-
-        <activity
-            android:name=".view.main.MainActivity"
-            android:exported="true">
-        </activity>
 
         <activity
             android:name=".view.welcome.WelcomeActivity"
@@ -56,9 +52,13 @@
             android:name=".view.userpref.UserPrefActivity"
             android:exported="false"/>
 
-        <activity
+        <service
             android:name=".view.chat.ChatActivity"
-            android:exported="false"/>
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
 
         <activity
             android:name=".view.findCat.FindCatFragment"

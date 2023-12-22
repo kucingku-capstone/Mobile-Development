@@ -1,65 +1,90 @@
-package com.example.kucingku.view.chat
-
-import android.app.NotificationChannel
-import android.app.NotificationManager
-import android.app.PendingIntent
-import android.content.Context
-import android.content.Intent
-import android.os.Build
-import android.os.Message
-import android.util.Log
-import androidx.core.app.NotificationCompat
-import com.example.kucingku.R
-import com.google.firebase.messaging.FirebaseMessagingService
-import com.google.firebase.messaging.RemoteMessage
-
-class ChatActivity : FirebaseMessagingService() {
-    override fun onNewToken(token: String) {
-        Log.d(TAG, "Refereshed token: $token")
-    }
-
-    override fun onMessageReceived(message: RemoteMessage) {
-        Log.d(TAG, "From: ${message.from}")
-        Log.d(TAG, "Message data payload: " + message.data)
-        Log.d(TAG, "Message Notification Body: ${message.notification?.body}")
-
-        sendNotification(message.notification?.title, message.notification?.body)
-    }
-
-    private fun sendNotification(title: String?, messageBody: String?) {
-        val contentIntent = Intent(applicationContext, ChatActivity::class.java)
-        val contentPendingIntent = PendingIntent.getActivity(
-            applicationContext,
-            NOTIFICATION_ID,
-            contentIntent,
-            PendingIntent.FLAG_IMMUTABLE
-        )
-
-        val notificationBuilder = NotificationCompat.Builder(applicationContext,
-            NOTIFICATION_CHANNEL_ID
-        )
-            .setSmallIcon(R.drawable.ic_launcher_foreground)
-            .setContentTitle(title)
-            .setContentText(messageBody)
-            .setContentIntent(contentPendingIntent)
-            .setAutoCancel(true)
-
-        val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(NOTIFICATION_CHANNEL_ID, NOTIFICATION_CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT)
-            notificationBuilder.setChannelId(NOTIFICATION_CHANNEL_ID)
-            notificationManager.createNotificationChannel(channel)
-        }
-        notificationManager.notify(NOTIFICATION_ID, notificationBuilder.build())
-    }
-
-    companion object {
-        private val TAG = ChatActivity::class.java.simpleName
-        private const val NOTIFICATION_ID = 1
-        private const val NOTIFICATION_CHANNEL_ID = "Firebase Channel"
-        private const val NOTIFICATION_CHANNEL_NAME = "Firebase Notification"
-
-    }
-
-
-}
+//package com.example.kucingku.view.chat
+//
+//import ChatAdapter
+//import android.Manifest
+//import android.os.Build
+//import android.os.Bundle
+//import android.os.Message
+//import android.widget.Toast
+//import androidx.activity.result.contract.ActivityResultContracts
+//import androidx.appcompat.app.AppCompatActivity
+//import androidx.recyclerview.widget.LinearLayoutManager
+//import com.example.kucingku.R
+//import com.example.kucingku.databinding.ActivityChatBinding
+//import com.firebase.ui.database.FirebaseRecyclerOptions
+//import com.google.firebase.auth.FirebaseAuth
+//import com.google.firebase.auth.ktx.auth
+//import com.google.firebase.database.FirebaseDatabase
+//import com.google.firebase.database.ktx.database
+//import com.google.firebase.ktx.Firebase
+//import java.util.Date
+//
+class ChatActivity {}
+// : AppCompatActivity() {
+//
+//    private lateinit var binding: ActivityChatBinding
+//    private lateinit var auth: FirebaseAuth
+//
+//    private lateinit var db: FirebaseDatabase
+//    private lateinit var adapter: ChatAdapter
+//
+//    private val requestNotificationPermissionLauncher =
+//        registerForActivityResult(
+//            ActivityResultContracts.RequestPermission()
+//        ) { isGranted: Boolean ->
+//            if (isGranted) {
+//                Toast.makeText(this, "Notifications permission granted", Toast.LENGTH_SHORT).show()
+//            } else {
+//                Toast.makeText(this, "Notifications permission rejected", Toast.LENGTH_SHORT).show()
+//            }
+//        }
+//
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        binding = ActivityChatBinding.inflate(layoutInflater)
+//        setContentView(binding.root)
+//
+//        if (Build.VERSION.SDK_INT >= 33) {
+//            requestNotificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+//        }
+//
+//        auth = Firebase.auth
+//        val firebaseUser = auth.currentUser
+//
+//        db = Firebase.database
+//
+//        val messagesRef = db.reference.child(MESSAGES_CHILD)
+//
+//        binding.sendButton.setOnClickListener {
+//            val friendlyMessage = com.example.kucingku.data.Message(
+//                binding.messageEditText.text.toString(),
+//                firebaseUser?.displayName.toString(),
+//                firebaseUser?.photoUrl.toString(),
+//                Date().time
+//            )
+//            messagesRef.push().setValue(friendlyMessage) { error, _ ->
+//                if (error != null) {
+//                    Toast.makeText(this, getString(R.string.send_error) + error.message, Toast.LENGTH_SHORT).show()
+//                } else {
+//                    Toast.makeText(this, getString(R.string.send_success), Toast.LENGTH_SHORT).show()
+//                }
+//            }
+//            binding.messageEditText.setText("")
+//        }
+//
+//        val manager = LinearLayoutManager(this)
+//        manager.stackFromEnd = true
+//        binding.messageRecyclerView.layoutManager = manager
+//
+//        val options = FirebaseRecyclerOptions.Builder<Message>()
+//            .setQuery(messagesRef, Message::class.java)
+//            .build()
+//        if (firebaseUser != null) {
+//            adapter = ChatAdapter(options, firebaseUser.displayName)
+//        }
+//        binding.messageRecyclerView.adapter = adapter
+//    }
+//    companion object {
+//        const val MESSAGES_CHILD = "messages"
+//    }
+//}

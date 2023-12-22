@@ -8,7 +8,9 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kucingku.R
+import com.example.kucingku.data.User
 import com.example.kucingku.databinding.ActivityLoginBinding
+import com.example.kucingku.utils.PrefsHelper
 import com.example.kucingku.view.main.MainActivity
 import com.example.kucingku.view.signup.SignUpActivity
 import com.example.kucingku.view.userpref.UserPrefActivity
@@ -21,6 +23,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 
 class LoginActivity : AppCompatActivity() {
@@ -106,12 +109,22 @@ class LoginActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     Log.d(TAG, "signInWithCredential:success")
                     val user = firebaseAuth.currentUser
+                    saveDataToDatabase(user!!)
                     updateUI(user)
                 } else {
                     Log.w(TAG, "signInWithCredential:failure", task.exception)
                     updateUI(null)
                 }
             }
+    }
+
+    private fun saveDataToDatabase(currentUser: FirebaseUser) {
+        val ref = FirebaseDatabase.getInstance().reference
+        val user = User(
+            email = currentUser.email,
+            username = currentUser.displayName
+        )
+        ref.child("user").child(currentUser.uid).setValue(user)
     }
 
     private fun updateUI(currentUser: FirebaseUser?) {
@@ -124,6 +137,9 @@ class LoginActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         val currentUser = firebaseAuth.currentUser
+        if (currentUser != null) {
+            PrefsHelper.putString(PrefsHelper.UID, currentUser.uid)
+        }
         updateUI(currentUser)
     }
 

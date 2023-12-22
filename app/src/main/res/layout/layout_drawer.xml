@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/orange"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="24dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change User"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:id="@+id/btn_adopter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/bg_solid_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_adopter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adopter"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:textColor="@color/orange"/>
+
+        <TextView
+            android:id="@+id/tv_adopter_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find to the cat adopt"
+            android:textSize="12sp"
+            android:textColor="@color/orange"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_shelter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/bg_stroke_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_shelter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shelter"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_shelter_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take steps to bring a feline friend to a new home"
+            android:textSize="12sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

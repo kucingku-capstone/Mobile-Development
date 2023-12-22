@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_findcat">
+
+    <fragment
+        android:id="@+id/navigation_findcat"
+        android:name="com.example.kucingku.view.findCat.FindCatFragment"
+        android:label="@string/find_cat"
+        tools:layout="@layout/activity_find_cat" />
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.example.kucingku.view.chat.ChatFragment"
+        android:label="@string/chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.kucingku.view.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

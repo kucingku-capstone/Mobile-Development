@@ -2,8 +2,29 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.KucingKu" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorOnPrimary">@color/white</item>
-        <item name="android:statusBarColor">@color/white</item>
     </style>
 
-    <style name="Theme.KucingKu" parent="Base.Theme.KucingKu" />
+    <style name="Theme.KucingKu.WhiteStatusBar" parent="Base.Theme.KucingKu">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:fontFamily">@font/poppins_reguler</item>
+    </style>
+
+    <style name="Theme.KucingKu.OrangeStatusBar" parent="Base.Theme.KucingKu">
+        <item name="android:statusBarColor">@color/orange</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.KucingKu.WhiteStatusBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.KucingKu.WhiteStatusBar.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.KucingKu.WhiteStatusBar.PopupOverlay"
+        parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_left</item>
+    </style>
 </resources>

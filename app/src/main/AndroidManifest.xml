@@ -1,75 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.kucingku">
+    package="com.example.kucingku" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
+        android:name=".KucingkuApp"
         android:allowBackup="true"
         android:icon="@drawable/kucingkuicon"
         android:label="@string/app_name"
         android:roundIcon="@drawable/kucingkuicon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.KucingKu">
-
+        android:theme="@style/Theme.KucingKu.WhiteStatusBar" >
         <activity
             android:name=".view.splash.SplashActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.KucingKu.OrangeStatusBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".view.onBoarding.OnboardingActivity"
             android:exported="false" />
-
+        <activity
+            android:name=".view.main.MainActivity"
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".view.welcome.WelcomeActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.KucingKu.OrangeStatusBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".view.login.LoginActivity"
             android:exported="false" />
-
         <activity
             android:name=".view.signup.SignUpActivity"
             android:exported="false" />
-
         <activity
             android:name=".view.login.ForgetPasswordActivity"
             android:exported="false" />
-
         <activity
             android:name=".view.userpref.UserPrefActivity"
-            android:exported="false"/>
-
-        <service
+            android:exported="false"
+            android:theme="@style/Theme.KucingKu.OrangeStatusBar" />
+        <activity
             android:name=".view.chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.findCat.FindCatFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".view.profile.EditProfileActivity"
+            android:exported="false" />
+        <service
+            android:name=".utils.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-
-        <activity
-            android:name=".view.findCat.FindCatFragment"
-            android:exported="false"
-            tools:ignore="Instantiatable" />
-
-        <activity
-            android:name=".view.profile.ProfileActivity"
-            android:exported="false"/>
-
-
     </application>
 
 </manifest>

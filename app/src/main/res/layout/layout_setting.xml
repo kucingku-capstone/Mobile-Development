@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_top_radius">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Edit Profile"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/poppins_bold"
+        app:backgroundTint="@color/white"
+        app:strokeColor="@color/orange"
+        app:strokeWidth="1dp"
+        app:cornerRadius="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_security_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Security &amp; Privacy"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/poppins_bold"
+        app:backgroundTint="@color/white"
+        app:strokeColor="@color/orange"
+        app:strokeWidth="1dp"
+        app:cornerRadius="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Log out"
+        android:textColor="@color/greybutton"
+        android:fontFamily="@font/poppins_bold"
+        app:backgroundTint="@color/greywhite"
+        app:cornerRadius="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Delete Account"
+        android:textSize="12sp"
+        android:textColor="@color/greybutton"
+        android:fontFamily="@font/poppins_bold"
+        app:backgroundTint="@color/white"/>
+
+</LinearLayout>

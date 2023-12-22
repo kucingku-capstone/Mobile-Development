@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">KucingKu</string>
-<!--    onboarding section-->
+    <!--    onboarding section-->
     <string name="btn_mulai">Find Now</string>
-<!--    login section-->
+    <!--    login section-->
     <string name="headline_login">Welcome Back</string>
     <string name="txt_login">Sign in to your already existing account \n by fillings fields below</string>
     <string name="username">Username</string>
@@ -20,21 +20,21 @@
     <string name="congratulation">Congratulation</string>
     <string name="next">Next</string>
     <string name="default_web_client_id">498838032232-j3fhn0cmgg7hhaha9dckt7nq16g0l9dh.apps.googleusercontent.com</string>
-<!--    signup section-->
+    <!--    signup section-->
     <string name="btn_signup">Sign Up</string>
     <string name="btn_find_a_cat">Find A Cat Now</string>
 
-<!--    preference section-->
+    <!--    preference section-->
     <string name="btn_next">Next</string>
     <string name="headline_messages">Your Interest</string>
-    <string name="txt_messages">Choose up to 5 things you like. This will \nhelp us find the perfect cat for you!</string>
+    <string name="txt_messages">Choose up to 3 things you like. This will \nhelp us find the perfect cat for you!</string>
     <!--    Breeds section-->
     <string name="txt_breeds">Breeds</string>
     <string name="btnpersian">Persian</string>
     <string name="btncoon">Coon</string>
     <string name="btnsiamase">Siamase</string>
     <string name="btnmaine">Maine</string>
-    <string name="btnbritish">British shorthair</string>
+    <string name="btnbritish">British Shorthair</string>
     <string name="btnrussian">Russian Blue</string>
     <string name="btnlocal">Local</string>
 
@@ -49,17 +49,29 @@
     <string name="btnyoung">Young</string>
     <string name="btnadult">Adult</string>
     <string name="btnsenior">Senior</string>
-    
-<!--    Profile section-->
+
+    <!--    Profile section-->
 
     <!--    Button section-->
     <string name="find_cat">Find Cat</string>
     <string name="chat">Chat</string>
     <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 
-<!--    message section-->
-    <string name="txt_message">Welcome to Kucingku! \nWhere adopting a cat is an exciting journey! \n \nWere here to build connections and create \nforever homes for our feline friends. Our goals a \nsmooth adoption experience, matching you \nwith the perfect cat companion, and ongoing support for a happy life together.
-    \n \nJoin us on this heartwarming journey of love, \ncompanionship, and countless joyful moments \nwith your furry friend.
-    \n \nWith love, Kucingku Team</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+<!--    chat-->
+    <string name="send_success">Berhasil terkirim</string>
+    <string name="send_error">Gagal terkirim</string>
 
 </resources>
